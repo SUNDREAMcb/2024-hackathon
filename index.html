@@ -80,7 +80,7 @@ input:checked + .slider:before {
     </style>
     <style>.card {
       width: 300px;
-      height: 400px;
+      height: 500px;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -92,10 +92,19 @@ input:checked + .slider:before {
       transform: scale(1.1); /* Adjust scale for expansion */
   }
 
+  .card:hover img {
+    height: 100%;
+  }
+
   .card img {
       width: 100%;
       height: 200px;
       object-fit: cover;
+      transition: all 0.3s ease;
+  }
+
+  .card-img:hover {
+      transform: height(1.1); /* Adjust scale for expansion */
   }
 
   .card-content {
@@ -149,9 +158,9 @@ input:checked + .slider:before {
     <p class="text-center"> Welcome to the website that I built with my friend Jay Jones over the course of ~24 Hours, 8.8.24 ~4:45PM. This is my professional portfolio.  </p>
     </div>
     <div class="grid gap-1 grid-cols-2"> 
-      <div class="border-2 border-slate m-8 p-4 rounded-lg bg-indigo-300 hover:border-dotted"><h1 class="merriweather-bold text-4xl text-lg flex justify-center">Visual Thinker put to Work</h1></div>
-      <div class="border-2 border-slate m-8 p-4 rounded-lg bg-indigo-300 border-red-500">
-        <div class="grid gap-1 grid-cols-5 text-6xl"> 
+      <div class="border-4 border-slate m-8 p-4 rounded-lg bg-indigo-300 hover:border-dotted"><h3 class="merriweather-bold text-4xl text-5xl flex justify-center">Visual Thinker put to Work</h3></div>
+      <div class="border-2 border-slate m-8 p-4 rounded-lg bg-indigo-300 ">
+        <div class="grid gap-1 grid-cols-5 text-6xl bg-indigo-300"> 
           <p>☀️</p>
           <p>☀️</p>
           <p>☀️</p>
@@ -160,12 +169,12 @@ input:checked + .slider:before {
           <!-- <p>.</p> Here's the logic, for each picture in slide, bold the dot you are on, probably wanna size up the font for now, maybe  -->
         </div>
       </div>
-      <div class="border-2 border-slate bg-indigo-300 m-8 p-4 rounded-lg border-indigo-500"><p class="text-indigo-960">When I moved to Austin in 2018, I swore to make my mark. I was a musician who barely practiced, but had a vision of creating. My first W2 job was slinging pizzas at Costco, but I was driven to create art in some way - My friend recruited me with their drag show talent agency Sister Fisters. I was hired to make video flyers to promote gigs for shows with a theme, some of my favorites involving Death Proof, and Rocky Horror Picture Show. I’d take clips from youtube to get the footage we were looking for, and overlay custom song mixes over top. This makes the work fall under Fair use, since we were transforming the work beyond its parts. All done in Windows Movie Maker (2007) and then exported to OneShot, a free, open-source video workstation that gave me a bit more control on effects. 
+      <div class="border-2 border-slate bg-indigo-300 m-8 p-4 rounded-lg bg-gray-100 border-indigo-500"><p class="text-gray-100">When I moved to Austin in 2018, I swore to make my mark. I was a musician who barely practiced, but had a vision of creating. My first W2 job was slinging pizzas at Costco, but I was driven to create art in some way - My friend recruited me with their drag show talent agency Sister Fisters. I was hired to make video flyers to promote gigs for shows with a theme, some of my favorites involving Death Proof, and Rocky Horror Picture Show. I’d take clips from youtube to get the footage we were looking for, and overlay custom song mixes over top. This makes the work fall under Fair use, since we were transforming the work beyond its parts. All done in Windows Movie Maker (2007) and then exported to OneShot, a free, open-source video workstation that gave me a bit more control on effects. 
         In 2019, I followed a Craigslist ad searching for ‘Strokes Cover band wanted’, where I met my would-be bandmates for the first time. From our first practice, we knew we were willing to put in the work, despite still needing a day job. I knew we had ‘made it’ when we announced our first big gig - Empire Control Room. Thanks to the support of the largest cover band in the world, The Red Not Chili Peppers, This is It was able to play to a huge crowd and get our name on Red River. Soon we’d find ourselves playing all the good venues, Stubb’s, Antone’s, Spider House, and The Parish. 
         Since starting that band, I had gone from standing guard on a graveyard shift at IBC plaza, to managing tickets for WhatsApp, to optimizing SEO builds at TopSpot. We even played our biggest show to date the week before Austin shut down for the pandemic. I felt a taste of success, but not fulfillment, so I turned my eyes to previous experiences that interested me.  
         Topspot opened my eyes to the search algorithm and how we can influence it. This goes hand in hand with b2b marketing as well as service as a sale.  When working with Fortune 500 companies, the seconds that drag can cost millions. Moving quickly and with a strategy was the mindset, meaning Every action has to mean something and be backed by data. Now I see the implication for optimization. Conveying the most important data the quickest. 
         </p></div>
-      <div class="border-2 border-slate m-8 p-4 rounded-lg bg-indigo-300 border-red-500"><img src="./images/sun.jpg" alt="placeholder until i get a good pic of myself (could take years)"></div>
+      <div class="border-2 border-slate m-8 p-4 rounded-lg bg-indigo-300 border-indigo-500"><img src="./images/sun.jpg" alt="placeholder until i get a good pic of myself (could take years)"></div>
     </div>
     <div class="m-10 border-solid border-20 ">
     <div>
@@ -190,13 +199,12 @@ input:checked + .slider:before {
       </ul> -->
     </div>
 
-      <h3 class="merriweather-bold text-5xl ">Projects</h3>
+      <h1 class="merriweather-bold text-5xl ">Projects</h1>
       <p> 
         Professional and personal projects compiled by year, medium and elevator pitch. I like making it happen. 
       </p>
       <br>
       <p class="Merriweather-light-italic"> 2024 Collection</p>
-      <!-- 2024 is the template for the rest of the years, be sure to go back and replace text when filling info in -->
       <div class="grid grid-cols-3">
         <div class="flex px-3 py-3">
           <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
@@ -244,6 +252,7 @@ input:checked + .slider:before {
               
               <div class="px-6 py-4">
                   <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">HTML</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Git</span>
                   <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">CSS</span>
                   <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
@@ -251,144 +260,193 @@ input:checked + .slider:before {
         </div>
       </div>
       <br>
-      <br>
       <p class="Merriweather-light-italic"> 2023 Collection - Go back and fill in favorite projects , work history, etc.. </p>
-      <div class="grid grid-cols-3">
+      <div class="grid grid-cols-4">
         <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-              <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                      perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-              </div>
-              
-              <div class="px-6 py-4">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
             </div>
+          </a>
+          
+          </div>
+          
         </div>
         <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-              <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                      perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-              </div>
-              
-              <div class="px-6 py-4">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
             </div>
+          </a>
+          
+          </div>
+          
         </div>
         <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-              <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <p class="text-gray-700 text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et
-                      perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-              </div>
-              
-              <div class="px-6 py-4">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
             </div>
+          </a>
+          
+          </div>
+          
         </div>
         <div class="flex px-3 py-3">
-          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
-              <img class="w-full" src="https://tailwindcss.com/img/card-top.jpg" alt="Sunset in the mountains">
-              <div class="px-6 py-4">
-                  <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
-                  <a href="#" class="font-bold hover:bg-yellow">Try hovering over this link.</a>
-                  <button class="w-full bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                    <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
-                    <span>Download</span>
-                  </button>
-              </div>
-              
-              <div class="px-6 py-4">
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
-                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
             </div>
+          </a>
+          
+          </div>
+          
+        </div>
         </div>
       </div>
       <br>
-      <p class="Merriweather-light-italic"> 2017-22 Collection</p>
-      <div class="grid gap-20 grid-cols-2">
-        <div class="border-2 border-slate m-8 p-4 rounded-lg bg-gray-100 border-red-500"><p>Number One</p></div>
-        <div class="border-2 border-slate m-8 p-4 rounded-lg bg-gray-100 border-red-500"><p>Number Two</p></div>
-        <div class="border-2 border-slate m-8 p-4 rounded-lg bg-gray-100 border-red-500"><p>Number Three</p></div>
-        <div class="border-2 border-slate m-8 p-4 rounded-lg bg-gray-100 border-red-500"><p>Number One</p></div>
-      </div>
-      <h3 class="merriweather-bold text 2x1 text-slate-200">Card that expands
-      </h3>
-      <div class="flex px-3 py-3 justify-evenly gap-4">
-      <body class="bg-gray-100 ">
-        <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Card Image">
-            <div class="card-content">
-                <h2 class="card-title">Card Title</h2>
-                <p class="card-text">This is some description text under the title.</p>
-            </div>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300x200" alt="Card Image">
-          <div class="card-content">
-              <h2 class="card-title">Card Title</h2>
-              <p class="card-text">This is some description text under the title.</p>
-          </div>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x200" alt="Card Image">
-        <div class="card-content">
-            <h2 class="card-title">Card Title</h2>
-            <p class="card-text">This is some description text under the title.</p>
-        </div>
-      </div>
-    </body>
-    </div>
-      <div>
-        <h4 class="merriweather-bold text-2x1 text-slate-200">Connect with me</h4>
-      </div>
-      <div>
-        <div class="flex flex-row grid-cols-5 ">
-          <div></div>
-            <div class="relative mt-2 rounded-md shadow-sm">
-              <div class="pointer-events-none absolute inset-y-0 left-0 flex  pl-3">
-                <span class="text-gray-500 sm:text-sm"></span>
+      <section class = "m-10 py-4 px-3">
+      <p class="Merriweather-light-italic"> 2017-22 Collection - Go back and fill in favorite projects , work history, etc.. </p>
+      <div class="grid grid-cols-4">
+        <div class="flex px-3 py-3">
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
               </div>
-              </div>
-              <a href="mailto:Cristian.barraza.work@gmail.com?subject=Hi! &body=Thanks for saying hi. " class="button button1 rounded-md"">Say Hi!</a>
             </div>
+          </a>
+          
           </div>
-          <div class="basis-1/4"></div>
           
-          <div class="basis-1/4"></div>
+        </div>
+        <div class="flex px-3 py-3">
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
+              </div>
+            </div>
+          </a>
           
-          <div class="basis-1/2"></div>
-          <label class="justify-right switch">
-            <input type="checkbox" checked>
-            <span class="slider round"></span>
-          </label>
+          </div>
+          
+        </div>
+        <div class="flex px-3 py-3">
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
+              </div>
+            </div>
+          </a>
+          
+          </div>
+          
+        </div>
+        <div class="flex px-3 py-3">
+          <div class="card">
+          <a class="card" href="https://www.youtube.com/@beaconfilms/videos">
+            <img src="./images/youtube.bmp" alt="Beacon Films Youtube Channel">
+            
+            <div class="card-content" >
+                <h3 class="card-title text-gray-700">Create Youtube Channel</h3>
+                <p class="card-text">Broke out my youtube channels into Music and films.</p>
+                <div class="px-6 py-4 ">
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Youtube</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">Video Editing</span>
+                  <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">SEO</span>
+              </div>
+            </div>
+          </a>
+          
+          </div>
+          
+        </div>
         </div>
       </div>
+      <br>
+      <div>
+      </section>
+        <section>
+      <h3 class="merriweather-bold text 2x1 text-slate-200">Dark Mode</h3>
+      <label class="flex switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+      </section>
+        <h4 class="merriweather-bold text-2x1 text-slate-200">Connect with me: </h4>
+        
+        <div class="relative mt-2 rounded-md shadow-sm">
+          <div class="pointer-events-none absolute inset-y-0 left-0 flex  pl-3">
+            <span class="text-gray-500 sm:text-sm"></span>
+          </div>
+          </div>
+          <a href="mailto:Cristian.barraza.work@gmail.com?subject=Hi! &body=Thanks for saying hi. " class="button button1 rounded-md"">Say Hi!</a>
+          
+        </div>
+      </div>
+      <div>
+      </div>
     </div>
+  </section>
   </body>
   
 </html>
